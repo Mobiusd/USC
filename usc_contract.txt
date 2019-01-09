@@ -1,4 +1,4 @@
-pragma solidity ^0.4.21;
+pragma solidity ^0.4.24;
 
 
 /**
@@ -251,13 +251,13 @@ contract StandardToken is ERC20, BasicToken,owned {
  * Note they can later distribute these tokens as they wish using `transfer` and other
  * `StandardToken` functions.
  */
-contract USDCoinToken is StandardToken {
+contract MobiToken is StandardToken {
 
-    string public constant name = "USDCoin"; // solium-disable-line uppercase
-    string public constant symbol = "USC"; // solium-disable-line uppercase
-    uint8 public constant decimals = 18; // solium-disable-line uppercase
+    string public constant name = "Mobi USD"; // solium-disable-line uppercase
+    string public constant symbol = "MUSD"; // solium-disable-line uppercase
+    uint8 public constant decimals = 8; // solium-disable-line uppercase
 
-    uint256 public constant INITIAL_SUPPLY = (100000) * (10 ** uint256(decimals));
+    uint256 public constant INITIAL_SUPPLY = (20000000) * (10 ** uint256(decimals));
 
     /**
     * @dev Constructor that gives msg.sender all of existing tokens.
